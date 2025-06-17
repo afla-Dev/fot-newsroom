@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Base application theme -->
+    <style name="Base.Theme.FOTNewsApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Set the primary color -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item> <!-- Optional for older Material themes -->
+        <item name="colorOnPrimary">@color/white</item> <!-- Make sure your text contrasts with #610063 -->
+    </style>
+
+    <style name="Theme.FOTNewsApp" parent="Base.Theme.FOTNewsApp" />
+
+</resources>

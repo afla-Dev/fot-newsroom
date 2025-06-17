@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="24dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!-- Edit Title -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginBottom="24dp"/>
+
+                <!-- Username Field -->
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="220dp"
+                    android:background="@drawable/rounded_container"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginTop="16dp"/>
+
+                    <EditText
+                        android:id="@+id/etUsername"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/edittext_background"
+                        android:paddingHorizontal="12dp"
+                        android:textSize="12sp" />
+
+                    <!-- Email Field -->
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/edittext_background"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="12dp"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <!-- Action Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp">
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="120dp"
+                        android:layout_height="48dp"
+                        android:text="Cancel"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/lavender"
+                        android:layout_marginEnd="20dp"/>
+
+                    <Button
+                        android:id="@+id/btnOk"
+                        android:layout_width="120dp"
+                        android:layout_height="48dp"
+                        android:text="OK"
+                        android:backgroundTint="@color/Purple"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <!-- User Info Display  -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Information"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/round_container"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Username"
+                            android:textSize="16sp"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/tvUsername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="aflat008"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="24dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Email"
+                            android:layout_marginEnd="33dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="helloafla@gmail.com"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="16dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Edit Info Button -->
+                <Button
+                    android:id="@+id/btnEditInfo"
+                    android:layout_width="250dp"
+                    android:text="Edit Info."
+                    android:textSize="16sp"
+                    android:layout_marginTop="24dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/lavender"
+                   />
+
+                <!-- Sign Out Button -->
+                <Button
+                    android:id="@+id/btnSignOut"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/button_primary"
+                    android:layout_marginTop="16dp"
+                    android:text="Sign Out"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
