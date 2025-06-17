@@ -11,8 +11,8 @@
 
     <item
         android:id="@+id/nav_saved"
-        android:icon="@drawable/baseline_save_24"
-        android:title="Saved"/>
+        android:icon="@drawable/baseline_edit_24"
+        android:title="Edit Info"/>
     <item
         android:id="@+id/nav_search"
         android:icon="@drawable/baseline_settings_24"
