@@ -85,9 +85,7 @@ public class UserProfileActivity extends AppCompatActivity {
                 startActivity(new Intent(this, NewsCategoriesActivity.class));
                 finish();
                 return true;
-            } else if (id == R.id.nav_sections) {
 
-                return true;
             } else if (id == R.id.nav_search) {
                 startActivity(new Intent(this, SettingsActivity.class));
                 finish();
