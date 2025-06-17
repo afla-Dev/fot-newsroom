@@ -25,9 +25,6 @@ public class NewsCategoriesActivity extends AppCompatActivity {
                 if (id == R.id.nav_home) {
                     // Already here
                     return true;
-                } else if (id == R.id.nav_sections) {
-                    // Handle sections click
-                    return true;
                 } else if (id == R.id.nav_search) {
                     startActivity(new Intent(NewsCategoriesActivity.this, SettingsActivity.class));
                     finish();
