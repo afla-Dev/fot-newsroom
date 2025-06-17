@@ -72,7 +72,7 @@ public class SignupActivity extends AppCompatActivity {
                         mDatabase.child(uid).setValue(user)
                                 .addOnSuccessListener(unused -> {
                                     Toast.makeText(this, "Registered Successfully!", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(SignupActivity.this, NewsCategoriesActivity.class));
+                                    startActivity(new Intent(SignupActivity.this, LoginActivity.class));
                                     finish();
                                 })
                                 .addOnFailureListener(e ->
