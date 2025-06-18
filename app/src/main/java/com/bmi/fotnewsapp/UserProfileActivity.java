@@ -15,6 +15,8 @@ public class UserProfileActivity extends AppCompatActivity {
     private TextView tvUsername, tvEmail;
     private Button btnEditInfo, btnSignOut;
 
+    private Button backbutton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,13 @@ public class UserProfileActivity extends AppCompatActivity {
         btnEditInfo.setOnClickListener(v -> {
             Intent intent = new Intent(UserProfileActivity.this, UserInfoEditActivity.class);
             startActivity(intent);
+        });
+
+        backButton.setOnClickListener(view -> {
+            Intent intent = new Intent(UserProfileActivity.this, NewsCategoriesActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+            finish();
         });
 
         // Sign Out button click handler
