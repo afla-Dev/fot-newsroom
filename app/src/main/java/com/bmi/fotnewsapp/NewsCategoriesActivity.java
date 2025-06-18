@@ -1,6 +1,5 @@
 package com.bmi.fotnewsapp;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -30,6 +29,7 @@ public class NewsCategoriesActivity extends AppCompatActivity {
                     finish();
                     return true;
                 } else if (id == R.id.nav_saved) {
+
                     // Handle saved click
                     return true;
                 } else if (id == R.id.nav_profile) {
