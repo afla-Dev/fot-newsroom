@@ -15,7 +15,7 @@ public class UserProfileActivity extends AppCompatActivity {
     private TextView tvUsername, tvEmail;
     private Button btnEditInfo, btnSignOut;
 
-    private Button backbutton;
+
 
 
     @Override
@@ -53,12 +53,7 @@ public class UserProfileActivity extends AppCompatActivity {
         btnSignOut.setOnClickListener(v -> {
             signOutUser();
         });
-        backButton.setOnClickListener(view -> {
-            Intent intent = new Intent(UserProfileActivity.this, NewsCategoriesActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            startActivity(intent);
-            finish();
-        });
+
     }
 
     @Override
