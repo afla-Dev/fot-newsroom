@@ -30,7 +30,6 @@ public class NewsCategoriesActivity extends AppCompatActivity {
                     finish();
                     return true;
                 } else if (id == R.id.nav_saved) {
-                    startActivity(new Intent(NewsCategoriesActivity.this, UserInfoEditActivity.class));
                     // Handle saved click
                     return true;
                 } else if (id == R.id.nav_profile) {
