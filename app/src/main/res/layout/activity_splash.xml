@@ -29,7 +29,7 @@ android:background="@color/white">
         android:textStyle="bold"
         android:text="Bringing You the Latest In"
         android:textSize="20dp"
-        android:textColor="@color/black"
+        android:textColor="@color/Purple"
         android:layout_marginTop="16dp"/>
 
     <TextView
@@ -38,7 +38,7 @@ android:background="@color/white">
         android:textStyle="bold"
         android:text="Tech at UOC."
         android:textSize="20dp"
-        android:textColor="@color/black"
+        android:textColor="@color/Purple"
         android:layout_marginTop="4dp"/>
 </LinearLayout>
 </RelativeLayout>
