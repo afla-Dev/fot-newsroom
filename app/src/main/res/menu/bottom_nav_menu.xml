@@ -5,18 +5,14 @@
         android:icon="@drawable/baseline_home_24"
         android:title="Home"/>
     <item
-        android:id="@+id/nav_sections"
-        android:icon="@drawable/baseline_category_24"
-        android:title="Sections"/>
-    <item
         android:id="@+id/nav_profile"
         android:icon="@drawable/baseline_account_circle_24"
         android:title="Profile"/>
 
     <item
         android:id="@+id/nav_saved"
-        android:icon="@drawable/baseline_save_24"
-        android:title="Saved"/>
+        android:icon="@drawable/baseline_edit_24"
+        android:title="Edit Info"/>
     <item
         android:id="@+id/nav_search"
         android:icon="@drawable/baseline_settings_24"
