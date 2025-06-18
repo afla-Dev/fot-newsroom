@@ -1,6 +1,5 @@
 package com.bmi.fotnewsapp;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;

@@ -16,6 +16,8 @@ public class UserProfileActivity extends AppCompatActivity {
     private Button btnEditInfo, btnSignOut;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,12 +46,7 @@ public class UserProfileActivity extends AppCompatActivity {
         btnSignOut.setOnClickListener(v -> {
             signOutUser();
         });
-        backButton.setOnClickListener(view -> {
-            Intent intent = new Intent(UserProfileActivity.this, NewsCategoriesActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            startActivity(intent);
-            finish();
-        });
+
     }
 
     @Override
@@ -91,7 +88,6 @@ public class UserProfileActivity extends AppCompatActivity {
                 finish();
                 return true;
             } else if (id == R.id.nav_saved) {
-
                 return true;
             } else if (id == R.id.nav_profile) {
                 // Already on profile page

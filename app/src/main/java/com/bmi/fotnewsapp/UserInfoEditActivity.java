@@ -24,6 +24,8 @@ public class UserInfoEditActivity extends AppCompatActivity {
     private DatabaseReference userRef;
     private FirebaseAuth mAuth;
 
+    private Button backButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +48,13 @@ public class UserInfoEditActivity extends AppCompatActivity {
 
         // Load current data
         loadUserInfo();
+
+        backButton.setOnClickListener(view -> {
+            Intent intent = new Intent(UserInfoEditActivity.this, UserProfileActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+            finish();
+        });
 
         // Button click listeners
         btnOk.setOnClickListener(v -> saveUserInfo());
